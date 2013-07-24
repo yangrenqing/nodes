@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?#parse("views/inc/head.html")?>
+<link href="static/css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="sider-userbox" id="sider-userbox">
+	<ul class="sider-userlist" id="sider-userlist">
+	</ul>
+</div>
+<div class="siter">
+	<div class="titler">
+		<div class="titler-usernum fn-right">
+			<span id="titler-usernum"><?!uerNumber?></span>:在线人数
+		</div>
+		我是提示啊
+	</div>
+	<div class="header background-color-main">
+		<a class="app-back top-13 left-20" id="app-back" href="javascript:"></a>
+		<div class="app-name">#波风水门#</div>
+	</div>
+	<div class="bodyer" id="scroll-box">
+		<div class="app-content" id="scroll-content">
+			<ul id="app-content">
+			</ul>
+		</div>
+	</div>
+	<div class="footer background-color-main">
+		<a href="javascript:" id="app-send" class="app-send fn-right margin-top5 margin-right3 width-62">发 送</a>
+		<div class="app-sendmesnum fn-left margin-top5 margin-left3" id="app-sendmesnum">140</div>
+		<div class="app-sendmes fn-left margin-top5 margin-left3">
+			<input type="text" class="fn-left width-470" id="app-sendmes" />
+		</div>
+	</div>
+</div>
+<input type="hidden" value="<?!userKeyName?>" id="userKeyName" />
+<script type="text/plain" id="app-content-mine">
+<li class="app-default app-mine fn-clear padding-top10 padding-bottom10">
+	<table class="fn-table-fixed  fn-opacity-hide" width="100%">
+		<tbody>
+			<tr>
+				<td valign="top">
+					<div class="app-username"><?!userKeyName?></div>
+					<div class="app-txt fn-text-justify">
+						<span class="app-txt-ico"></span>
+						<%!content%>
+					</div>
+				</td>
+				<td width="60"  valign="top">
+					<div class="app-img" style="background:url('<%!imgurl%>') no-repeat 0 0;">
+						<a href="javascript:"></a>
+					</div>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</li>
+</script>
+<script type="text/plain" id="app-content-default">
+<li class="app-default fn-clear padding-top10 padding-bottom10">
+	<table class="fn-table-fixed  fn-opacity-hide" width="100%">
+		<tbody>
+			<tr>
+				<td width="60" valign="top"><div class="app-img" style="background:url('<%!imgurl%>') no-repeat 0 0;">
+						<a href="javascript:"></a>
+					</div>
+				</td>
+				<td valign="top">
+					<div class="app-username"><%!userKeyName%></div>
+					<div class="app-txt fn-text-justify">
+						<span class="app-txt-ico"></span>
+						<%!content%>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</li>
+</script>
+<script type="text/javascript" src="static/somjs/som.js" data-main="../main/demo_24.js" data-config="../somjs/config.js"></script>
+</body>
+</html>

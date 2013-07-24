@@ -1,0 +1,18 @@
+﻿body{color:#666;}
+a{color:#666;}
+a:hover{color:#666;}
+.fn-tran{transition:all .1s ease-in .1s;}
+.fn-clear{zoom:1;}
+.fn-clear:after{visibility:hidden;display:block;font-size:0;content:"1";clear:both;height:0;}
+.fn-show{display:block;}
+.fn-hide{display:none;}
+.fn-left{float:left;_display:inline;}
+.fn-right{float:right;_display:inline;}
+.fn-input-text{vertical-align:top;*vertical-align:middle;*margin-top:-1px;*margin-bottom:-1px;}
+.fn-input-button{vertical-align:top;*vertical-align:middle;border:none;background:none;text-align:center;cursor:pointer;}
+.fn-text-justify{text-align:justify;text-justify:inter-ideograph;}
+.fn-table-fixed{table-layout:fixed;}
+.fn-font-arial{font-family:Arial !important;}
+.fn-vertical-middle{vertical-align:middle !important;}
+.fn-opacity-hide{opacity:0;filter:alpha(opacity=0)}
+.fn-opacity-show{opacity:1;filter:alpha(opacity=100)}

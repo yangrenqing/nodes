@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?#parse("views/inc/head.html")?>
+<link href="static/css/css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="login-siter">
+	<div class="header">
+		<div class="app-name">取个名字就能和大家一起聊天</div>
+	</div>
+	<div class="login-bodyer">
+		<form action="/socket" method="POST">
+			<table width="100%" class="fn-table-fixed margin-top20">
+				<tbody>
+					<tr>
+						<td width="14%" align="right" class="table-name"></td>
+						<td>
+							<div class="app-sendmes fn-left">
+								<input type="text" name="userKeyName" value="" class="fn-left margin-left5 width-400" id="login-name" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<a href="javascript:" id="login-surer" class="app-send fn-left width-62">确 定</a>
+							<span class="login-mes margin-left5 color-F00 fn-hide" id="login-mes">名字有人取掉啦</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="static/somjs/som.js" data-main="../main/login.js" data-config="../somjs/config.js"></script>
+</body>
+</html>
